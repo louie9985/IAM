@@ -1,0 +1,8 @@
+{
+  "name": "@iam/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IAM authentication, account security, and global administrator web console.",
+  "license": "UNLICENSED",
+  "type": "module"
+}

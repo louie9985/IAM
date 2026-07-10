@@ -37,14 +37,17 @@ corepack pnpm install --frozen-lockfile
 ```
 
 根目录已提供 `format:check`、`lint`、`typecheck`、`test`、`test:integration`、
-`test:e2e`、`contracts:check`、`architecture:check` 和 `build` 标准命令。前后端
-Workspace 将在 M0 Task 0.3 建立，在此之前 Turbo 显示零个任务属于预期行为。
+`test:e2e`、`contracts:check`、`architecture:check` 和 `build` 标准命令。
+
+前端 Web、三个后端 Runtime、七个领域模块、七个平台包、Contracts、四个 SDK 和参考应用
+已经登记为独立 Workspace。当前只有 19 个包包含最小公共 `index.ts` 并参与 Lint/Typecheck；
+Runtime、Web 和参考应用仍只有清单与职责说明，不包含业务源码或 Mock。
 
 ## 下一阶段
 
 V2.0 立项书、详细设计、[M0-M4 交付路线图](docs/plans/2026-07-10-iam-delivery-roadmap.md)
 和 [M0 工程底座实施计划](docs/plans/2026-07-10-m0-foundation-implementation-plan.md)
-已经批准。当前按计划顺序执行 M0，下一项是 Task 0.3：建立前后端 Workspace 和所有权元数据；
-此时仍不应提前创建业务代码、数据库迁移或生产配置。
+已经批准。M0 Task 0.1–0.3 已完成，下一项是 Task 1.1：把包依赖、深层导入、领域纯度、
+表所有权和 Runtime 薄入口规则变成自动架构检查；此时仍不应提前实现 IAM 业务或数据库迁移。
 
 文档导航见 [docs/README.md](docs/README.md)。

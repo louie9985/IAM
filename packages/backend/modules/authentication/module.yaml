@@ -1,0 +1,22 @@
+name: authentication
+risk: red
+owns_tables:
+  - credentials
+  - password_histories
+  - totp_methods
+  - mfa_recovery_codes
+  - authentication_interactions
+  - oidc_artifacts
+allowed_dependencies:
+  - '@iam/contracts'
+  - '@iam/platform-crypto'
+  - '@iam/platform-events'
+  - '@iam/module-identity'
+  - '@iam/module-security'
+  - '@iam/module-applications'
+  - '@iam/module-session'
+emits: []
+consumes:
+  - iam.application.client.changed.v1
+  - iam.security.policy.published.v1
+  - iam.session.revoked.v1

@@ -1,0 +1,20 @@
+name: security
+risk: red
+owns_tables:
+  - policy_sets
+  - policy_versions
+  - policy_values
+  - policy_exceptions
+  - login_attempts
+  - account_lockouts
+  - ip_access_rules
+  - risk_events
+allowed_dependencies:
+  - '@iam/contracts'
+  - '@iam/platform-crypto'
+  - '@iam/platform-events'
+  - '@iam/module-applications'
+emits:
+  - iam.security.policy.published.v1
+consumes:
+  - iam.application.client.changed.v1

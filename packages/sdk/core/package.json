@@ -1,0 +1,18 @@
+{
+  "name": "@iam/core",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Framework-neutral OIDC, JWKS, strict token validation, and generated API client.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

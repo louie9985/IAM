@@ -1,0 +1,8 @@
+{
+  "name": "@iam/auth-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Thin runtime entry for OIDC, authentication, and session-critical traffic.",
+  "license": "UNLICENSED",
+  "type": "module"
+}

@@ -1,0 +1,25 @@
+name: authorization
+risk: red
+owns_tables:
+  - permissions
+  - permission_manifests
+  - manifest_diffs
+  - roles
+  - role_templates
+  - role_template_versions
+  - role_permissions
+  - role_assignments
+  - data_scope_grants
+  - subject_authorization_versions
+allowed_dependencies:
+  - '@iam/contracts'
+  - '@iam/platform-events'
+  - '@iam/module-identity'
+  - '@iam/module-applications'
+emits:
+  - iam.authorization.subject.changed.v1
+  - iam.authorization.manifest.published.v1
+consumes:
+  - iam.identity.account.changed.v1
+  - iam.identity.employment.changed.v1
+  - iam.application.client.changed.v1

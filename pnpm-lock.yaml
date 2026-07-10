@@ -32,6 +32,54 @@ importers:
         specifier: 8.63.0
         version: 8.63.0(eslint@10.6.0)(typescript@6.0.3)
 
+  apps/backend/auth-runtime: {}
+
+  apps/backend/control-runtime: {}
+
+  apps/backend/worker-runtime: {}
+
+  apps/frontend/web: {}
+
+  examples/reference-app: {}
+
+  packages/backend/modules/applications: {}
+
+  packages/backend/modules/audit: {}
+
+  packages/backend/modules/authentication: {}
+
+  packages/backend/modules/authorization: {}
+
+  packages/backend/modules/identity: {}
+
+  packages/backend/modules/security: {}
+
+  packages/backend/modules/session: {}
+
+  packages/backend/platform/config: {}
+
+  packages/backend/platform/crypto: {}
+
+  packages/backend/platform/database-audit: {}
+
+  packages/backend/platform/database-main: {}
+
+  packages/backend/platform/events: {}
+
+  packages/backend/platform/observability: {}
+
+  packages/backend/platform/testing: {}
+
+  packages/contracts: {}
+
+  packages/sdk/core: {}
+
+  packages/sdk/manifest: {}
+
+  packages/sdk/nestjs: {}
+
+  packages/sdk/react: {}
+
 packages:
   '@eslint-community/eslint-utils@4.9.1':
     resolution:

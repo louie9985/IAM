@@ -1,0 +1,23 @@
+name: identity
+risk: red
+owns_tables:
+  - tenants
+  - accounts
+  - employees
+  - organization_units
+  - positions
+  - employments
+  - user_groups
+  - user_group_members
+  - identity_sources
+  - external_identity_mappings
+  - import_batches
+  - import_rows
+  - import_conflicts
+allowed_dependencies:
+  - '@iam/contracts'
+  - '@iam/platform-events'
+emits:
+  - iam.identity.account.changed.v1
+  - iam.identity.employment.changed.v1
+consumes: []

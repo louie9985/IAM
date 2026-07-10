@@ -1,0 +1,12 @@
+{
+  "name": "@iam/module-audit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Append-only audit intents, records, search, export, archive, and integrity verification.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

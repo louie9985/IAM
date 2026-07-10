@@ -1,0 +1,8 @@
+{
+  "name": "@iam/worker-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Thin runtime entry for outbox delivery, consumers, audit ingestion, and asynchronous jobs.",
+  "license": "UNLICENSED",
+  "type": "module"
+}

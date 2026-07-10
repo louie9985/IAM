@@ -1,0 +1,12 @@
+{
+  "name": "@iam/platform-database-main",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Main PostgreSQL client, transaction primitives, and migration infrastructure.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

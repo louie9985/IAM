@@ -1,0 +1,21 @@
+name: audit
+risk: red
+owns_tables:
+  - audit_intents
+  - audit_records
+  - audit_export_jobs
+  - audit_archives
+  - audit_integrity_checkpoints
+allowed_dependencies:
+  - '@iam/contracts'
+  - '@iam/platform-events'
+  - '@iam/platform-database-audit'
+emits: []
+consumes:
+  - iam.identity.account.changed.v1
+  - iam.identity.employment.changed.v1
+  - iam.authorization.subject.changed.v1
+  - iam.authorization.manifest.published.v1
+  - iam.session.revoked.v1
+  - iam.security.policy.published.v1
+  - iam.application.client.changed.v1

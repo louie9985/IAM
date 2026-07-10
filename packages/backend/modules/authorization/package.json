@@ -1,0 +1,12 @@
+{
+  "name": "@iam/module-authorization",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Permissions, manifests, roles, assignments, data scopes, and authorization versions.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

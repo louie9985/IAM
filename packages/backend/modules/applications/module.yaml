@@ -1,0 +1,18 @@
+name: applications
+risk: red
+owns_tables:
+  - applications
+  - oauth_clients
+  - oauth_client_redirect_uris
+  - oauth_client_logout_uris
+  - oauth_client_secrets
+  - resource_servers
+  - oauth_scopes
+  - service_principals
+allowed_dependencies:
+  - '@iam/contracts'
+  - '@iam/platform-crypto'
+  - '@iam/platform-events'
+emits:
+  - iam.application.client.changed.v1
+consumes: []

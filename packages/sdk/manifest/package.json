@@ -1,0 +1,18 @@
+{
+  "name": "@iam/manifest",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Permission manifest DSL, validation, diff submission, and generated permission constants.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

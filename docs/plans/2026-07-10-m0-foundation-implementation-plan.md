@@ -1,6 +1,6 @@
 # IAM M0 工程底座实施计划
 
-> 状态：待项目负责人审阅；批准后按顺序执行
+> 状态：已批准，执行中（Task 0.1–0.3 已完成）
 >
 > 日期：2026-07-10
 >
@@ -165,7 +165,9 @@ examples/reference-app/
 3. Runtime 先只建立 Manifest，不添加业务模块。
 4. Contracts 与 SDK 明确 Publishable/Private 边界。
 5. 前端和后端局部 `AGENTS.md` 只补充根规则，不复制全文。
-6. 建立包命名规范：`@iam/module-*`、`@iam/platform-*`、`@iam/sdk-*`。
+6. 建立包命名规范：内部领域包使用 `@iam/module-*`，内部平台包使用
+   `@iam/platform-*`；公开 SDK 沿用立项书和详细设计确定的 `@iam/core`、
+   `@iam/nestjs`、`@iam/react`、`@iam/manifest`。
 
 **验证**：
 
@@ -330,7 +332,7 @@ pnpm --filter @iam/contracts test
 ```text
 pnpm contracts:generate
 pnpm contracts:check
-pnpm --filter @iam/sdk-core typecheck
+pnpm --filter @iam/core typecheck
 ```
 
 **建议提交**：`feat(contracts): establish deterministic contract codegen`

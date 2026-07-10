@@ -1,0 +1,12 @@
+{
+  "name": "@iam/module-applications",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Applications, OAuth clients, resource servers, scopes, secrets, and service principals.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

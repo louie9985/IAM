@@ -1,0 +1,8 @@
+{
+  "name": "@iam/reference-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Executable NestJS and React reference integration for IAM protocols and SDKs.",
+  "license": "UNLICENSED",
+  "type": "module"
+}

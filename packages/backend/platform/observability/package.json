@@ -1,0 +1,12 @@
+{
+  "name": "@iam/platform-observability",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Structured logging, tracing, metrics, health, and sensitive-field redaction.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

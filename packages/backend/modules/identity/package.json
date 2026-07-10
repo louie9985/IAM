@@ -1,0 +1,12 @@
+{
+  "name": "@iam/module-identity",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Identity registry for tenants, accounts, employees, organization, positions, employment, groups, and imports.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}
