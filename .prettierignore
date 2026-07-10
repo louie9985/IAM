@@ -1,0 +1,8 @@
+**/*.md
+**/.turbo/**
+**/build/**
+**/coverage/**
+**/dist/**
+**/generated/**
+**/node_modules/**
+.superpowers/**

@@ -1,0 +1,10 @@
+packages:
+  - apps/backend/*
+  - apps/frontend/*
+  - examples/*
+  - packages/*
+  - packages/backend/modules/*
+  - packages/backend/platform/*
+  - packages/sdk/*
+  - tests/*
+  - tools/*

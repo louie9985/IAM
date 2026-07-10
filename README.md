@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-项目处于设计确认阶段，尚未搭建代码和运行环境。当前受控文档：
+项目已进入 M0 工程底座建设阶段，尚未实现 IAM 业务或可运行服务。当前受控文档：
 
 - [项目立项书 V2.0](项目立项书-V2.0.md)：目标、范围、技术路线、里程碑和验收标准。
 - [详细设计规格](docs/specs/2026-07-10-iam-platform-design.md)：运行时、领域模型、认证、权限、策略、审计、目录和质量门禁。
@@ -23,11 +23,28 @@
 - 规则由有类型、版本化的策略中心管理，可按应用和登录通道覆盖。
 - GitHub 构建一次不可变镜像，测试验收后以同一 Digest 晋级生产。
 
+## 本地工具链
+
+- Node.js `24.15.0`
+- pnpm `11.11.0`（通过 Corepack 使用）
+- TypeScript `6.0.3`
+- Turborepo `2.10.4`
+
+首次安装依赖：
+
+```powershell
+corepack pnpm install --frozen-lockfile
+```
+
+根目录已提供 `format:check`、`lint`、`typecheck`、`test`、`test:integration`、
+`test:e2e`、`contracts:check`、`architecture:check` 和 `build` 标准命令。前后端
+Workspace 将在 M0 Task 0.3 建立，在此之前 Turbo 显示零个任务属于预期行为。
+
 ## 下一阶段
 
-V2.0 立项书和详细设计已经完成讨论。项目负责人审阅并批准
-[M0-M4 交付路线图](docs/plans/2026-07-10-iam-delivery-roadmap.md)与
-[M0 工程底座实施计划](docs/plans/2026-07-10-m0-foundation-implementation-plan.md)后，
-再执行 M0。当前阶段不应提前创建业务代码、数据库迁移或生产配置。
+V2.0 立项书、详细设计、[M0-M4 交付路线图](docs/plans/2026-07-10-iam-delivery-roadmap.md)
+和 [M0 工程底座实施计划](docs/plans/2026-07-10-m0-foundation-implementation-plan.md)
+已经批准。当前按计划顺序执行 M0，下一项是 Task 0.3：建立前后端 Workspace 和所有权元数据；
+此时仍不应提前创建业务代码、数据库迁移或生产配置。
 
 文档导航见 [docs/README.md](docs/README.md)。
