@@ -1,0 +1,48 @@
+# Dependencies and package-manager state
+node_modules/
+.pnpm-store/
+
+# Build and cache output
+.turbo/
+dist/
+build/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Test output
+playwright-report/
+test-results/
+blob-report/
+.vitest/
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!**/*.env.example
+.secrets/
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Runtime data and logs
+*.log
+logs/
+tmp/
+temp/
+data/
+volumes/
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local visual brainstorming sessions
+.superpowers/
